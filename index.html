@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全文コピー — 使い方・サポート</title>
+<meta name="description" content="SafariのWeb拡張機能「全文コピー」の使い方とサポート。iPhoneのSafariには「すべて選択」がありません。このアプリが、その操作を追加します。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">全文コピー<span> / Copy All: Text</span></a>
+    <nav class="nav">
+      <a href="index.html">使い方</a>
+      <a href="en.html">English</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>ボタン1回で、ページのテキストをすべてコピー</h1>
+  <p>iPhoneのSafariには、Webページの「すべて選択」がありません。「全文コピー」は、その操作をSafariに追加するWeb拡張機能です。</p>
+</div>
+
+<main>
+
+  <section>
+    <h2>はじめに：拡張機能の有効化</h2>
+    <p class="lead">初回のみ、設定アプリで拡張機能を有効にする必要があります。</p>
+    <ol class="steps">
+      <li>iPhoneの<strong>設定</strong>アプリを開く</li>
+      <li><strong>アプリ</strong> → <strong>Safari</strong> → <strong>拡張機能</strong> をタップ</li>
+      <li>「全文コピー」をオンにする</li>
+      <li>「<strong>すべてのWebサイトで許可</strong>」を選ぶ（ボタンを押したページだけに動作します）</li>
+    </ol>
+    <div class="callout">有効化後は、Safariのアドレスバー右端の<strong>拡張機能ボタン</strong>（「AA」ボタン）をタップすると拡張機能のポップアップが開きます。</div>
+  </section>
+
+  <section id="copy-all">
+    <h2>1. 全文コピー</h2>
+    <div class="feature">
+      <div class="shot"><img src="img/ja-1.png" alt="全文コピーの画面"></div>
+      <div class="body">
+        <h3>Safari上で読み取れるテキストをまとめてコピー</h3>
+        <p>ポップアップの「全文コピー」ボタンを押すだけで、Safari上で読み取れるページのテキストをまとめてクリップボードへコピーします。</p>
+        <ul>
+          <li>コピー後に<strong>文字数</strong>と<strong>内容のプレビュー</strong>を表示します</li>
+          <li>ページ上でテキストを選択していた場合は、その<strong>選択範囲を優先</strong>してコピーします</li>
+          <li>50,000文字を超えるページは、処理前に確認を表示します</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="copy-article">
+    <h2>2. 本文だけコピー</h2>
+    <div class="feature reverse">
+      <div class="shot"><img src="img/ja-2.png" alt="本文だけコピーの画面"></div>
+      <div class="body">
+        <h3>広告・メニュー・フッターを除いて記事だけ取り出す</h3>
+        <p>Mozilla Readabilityを使って、ページから記事本文だけを抽出してコピーします。ニュース記事や技術ブログのコピーに適しています。</p>
+        <ul>
+          <li>広告、ナビゲーション、フッターなどを自動で除去</li>
+          <li>本文の判別ができなかった場合は、全文コピーへ自動でフォールバック</li>
+          <li>フォールバックが発生した場合はプレビューで通知します</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tap-select">
+    <h2>3. タップ選択</h2>
+    <div class="feature">
+      <div class="shot"><img src="img/ja-3.png" alt="タップ選択の画面"></div>
+      <div class="body">
+        <h3>必要な領域だけをタップで選んでコピー</h3>
+        <p>指でドラッグして文字を選ぶのとは別のアプローチです。ページ上の意味的なブロックをタップで選択し、複数まとめてコピーできます。</p>
+        <ul>
+          <li>タップで選択、再タップで解除。複数領域を選択順にコピー</li>
+          <li>長押しで親要素・子要素の候補を切り替え可能</li>
+          <li>画面下部の「コピー」ボタンで選択領域を一括コピー</li>
+          <li>終了時にページへの変更をすべて元に戻します</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="other-formats">
+    <h2>4. その他の形式</h2>
+    <p class="lead">ポップアップの「その他の形式」を開くと、以下の機能が使えます。</p>
+    <div class="feature">
+      <div class="shot"><img src="img/ja-4.png" alt="その他の形式"></div>
+      <div class="body">
+        <h3>Markdownでコピー</h3>
+        <p>見出し、リンク、リスト、表、コードブロックの構造を保ったままMarkdown形式でコピーします。</p>
+        <h3>AI用コピー</h3>
+        <p>本文・タイトル・URLに指示文を組み合わせ、AIチャットへ貼り付けやすい形式に端末内で整形します。外部への送信は行いません。</p>
+        <h3>クリーンコピー</h3>
+        <p>Cookie通知、共有ボタン、購読案内、重複メニューなどを整理してコピーします。Mozilla Readabilityとは別のルールベース処理です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="settings">
+    <h2>設定</h2>
+    <p class="lead">ポップアップの設定アイコンから開けます。</p>
+    <ul>
+      <li><strong>URLの付加</strong>：コピー結果の末尾にURL、または先頭にタイトルとURLを付けるか選べます（初期値：付けない）</li>
+      <li><strong>AI用コピーのURL</strong>：AI用コピーではURLを初期で付加します（コピー前に無効化可能）</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details><summary>拡張機能アイコンが表示されません</summary>
+        <p>設定アプリ → アプリ → Safari → 拡張機能 で「全文コピー」がオンになっているか確認してください。有効にするとアドレスバー右端の「&#xAA;」アイコン内に表示されます。</p></details>
+      <details><summary>「コピーできません」と表示される</summary>
+        <p>SafariのスタートページやApp Storeページなどの内部ページ、PDFビューアではご利用いただけません。また、ページの読み込みが完了していない場合も失敗することがあります。</p></details>
+      <details><summary>本文だけコピーで内容が少なくなりすぎる</summary>
+        <p>本文の判別には限界があります。記事以外のページ（ECサイト、ポータルなど）では「全文コピー」または「タップ選択」をお使いください。</p></details>
+      <details><summary>コピーした文字数が表示される文字数と実際の文字数が違う</summary>
+        <p>表示される文字数は、空白や改行の正規化後の文字数です。コピー後のアプリによっては改行の扱いが異なる場合があります。</p></details>
+      <details><summary>ログインが必要なページで取得できない</summary>
+        <p>ログイン後に遅延読み込みされるコンテンツや、Shadow DOMを使ったページの一部は取得できない場合があります。取得できた範囲でコピーし、不足する部分はプレビューから確認してください。</p></details>
+      <details><summary>広告なし・無料の理由は？</summary>
+        <p>日常のコピー操作を簡単にする小さなユーティリティーとして提供しています。広告、解析、アカウント登録、外部通信はありません。将来にわたって無料を維持する方針です。</p></details>
+      <details><summary>履歴は保存されますか？</summary>
+        <p>保存しません。コピーした内容はクリップボードに書き込まれるだけです。設定値（URLの付加など）のみ端末内に保存します。</p></details>
+    </div>
+    <div class="callout" style="margin-top:16px">※Webサイトの構造やアクセス制限によっては、一部のテキストを取得できない場合があります。</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告・ご要望・ご質問は、以下のメールまでお気軽にどうぞ。日本語・英語で対応します。</p>
+    <p>✉️ <a href="mailto:kouhei1@gmail.com">kouhei1@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div>全文コピー / Copy All: Text</div>
+  <div style="margin-top:8px">
+    <a href="index.html">使い方</a>·
+    <a href="en.html">English</a>·
+    <a href="privacy.html">プライバシーポリシー</a>·
+    <a href="mailto:kouhei1@gmail.com">お問い合わせ</a>·
+    <a href="https://isitest1.github.io/portfolio-hub/ja">Kohei Ishikawa のポートフォリオ</a>
+  </div>
+</footer>
+
+</body>
+</html>

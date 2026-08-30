@@ -1,0 +1,120 @@
+/* Copy All: Text — support & privacy site */
+:root {
+    --navy: #1a2233;
+    --blue: #2F6BFF;
+    --blue-light: #5b8fff;
+    --bg: #F2F4F8;
+    --surface: #ffffff;
+    --text: #1a2233;
+    --muted: #5a6880;
+    --border: #dde2ec;
+    --radius: 16px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1f55cc; }
+img { max-width: 100%; display: block; }
+
+/* Header */
+.site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 20px;
+    position: sticky; top: 0; z-index: 10;
+}
+.site-header .inner {
+    max-width: 900px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    flex-wrap: wrap;
+}
+.brand { font-weight: 800; font-size: 18px; letter-spacing: .5px; color: #fff; text-decoration: none; }
+.brand span { color: var(--blue-light); }
+.nav a { color: #c0d0f0; text-decoration: none; margin-left: 18px; font-size: 14px; font-weight: 600; }
+.nav a:hover { color: #fff; }
+
+/* Hero */
+.hero {
+    background: linear-gradient(165deg, #2F6BFF, #1B3FCC);
+    color: #fff;
+    text-align: center;
+    padding: 56px 20px 60px;
+}
+.hero h1 { font-size: 34px; font-weight: 800; letter-spacing: -.5px; margin-bottom: 12px; }
+.hero p { font-size: 17px; max-width: 620px; margin: 0 auto; opacity: .96; }
+
+/* Layout */
+main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+section { margin-bottom: 48px; }
+h2 {
+    font-size: 24px; font-weight: 800; margin-bottom: 8px;
+    padding-bottom: 8px; border-bottom: 3px solid var(--blue); display: inline-block;
+}
+h3 { font-size: 18px; font-weight: 700; margin: 22px 0 6px; color: var(--navy); }
+p.lead { color: var(--muted); margin-bottom: 16px; }
+ul { margin: 8px 0 8px 22px; }
+li { margin: 4px 0; }
+
+/* Step list */
+.steps { counter-reset: step; list-style: none; margin: 0 0 16px; padding: 0; }
+.steps li {
+    counter-increment: step;
+    display: flex; gap: 14px; align-items: flex-start;
+    margin-bottom: 12px;
+}
+.steps li::before {
+    content: counter(step);
+    flex: 0 0 28px; height: 28px; line-height: 28px;
+    text-align: center; font-weight: 800; font-size: 14px;
+    background: var(--blue); color: #fff; border-radius: 50%;
+}
+
+/* Feature cards */
+.feature {
+    display: flex; gap: 24px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 22px; margin-bottom: 20px;
+}
+.feature .shot { flex: 0 0 190px; }
+.feature .shot img { border-radius: 22px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+.feature .body { flex: 1; min-width: 0; }
+.feature h3 { margin-top: 0; }
+.feature.reverse { flex-direction: row-reverse; }
+@media (max-width: 640px) {
+    .feature, .feature.reverse { flex-direction: column; text-align: left; }
+    .feature .shot { flex: 0 0 auto; max-width: 220px; margin: 0 auto; }
+}
+
+/* FAQ */
+.faq details {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 4px 16px; margin-bottom: 10px;
+}
+.faq summary { font-weight: 700; cursor: pointer; padding: 10px 0; }
+.faq details p { padding: 0 0 12px; color: #47535d; }
+
+/* Callout */
+.callout {
+    background: #eff4ff; border: 1px solid #c0d0f4; border-radius: 12px;
+    padding: 16px 18px; margin: 16px 0;
+}
+.contact a { font-weight: 700; }
+
+/* Privacy */
+.block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+.block h3 { margin-top: 0; }
+.updated { color: var(--muted); font-size: 14px; }
+
+/* Footer */
+footer {
+    background: var(--navy); color: #8a9bb8; text-align: center;
+    padding: 28px 20px; font-size: 14px;
+}
+footer a { color: var(--blue-light); text-decoration: none; margin: 0 8px; }

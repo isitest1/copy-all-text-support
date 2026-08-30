@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy All: Text — Support</title>
+<meta name="description" content="Support page for Copy All: Text, a Safari extension that adds Select All to iPhone. One tap copies the whole page.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="en.html">Copy All: Text<span> / 全文コピー</span></a>
+    <nav class="nav">
+      <a href="en.html">Support</a>
+      <a href="index.html">日本語</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Copy the whole page with one tap</h1>
+  <p>Safari on iPhone has no Select All for web pages. Copy All: Text adds it — one tap copies everything readable on the page.</p>
+</div>
+
+<main>
+
+  <section>
+    <h2>Getting started: enabling the extension</h2>
+    <p class="lead">You only need to do this once.</p>
+    <ol class="steps">
+      <li>Open the <strong>Settings</strong> app on your iPhone</li>
+      <li>Go to <strong>Apps</strong> → <strong>Safari</strong> → <strong>Extensions</strong></li>
+      <li>Turn on <strong>Copy All: Text</strong></li>
+      <li>Select <strong>Allow for All Websites</strong> (the extension only runs when you tap its button)</li>
+    </ol>
+    <div class="callout">Once enabled, tap the <strong>Extensions button</strong> (the "AA" button) in the Safari address bar to open the extension popup.</div>
+  </section>
+
+  <section id="copy-all">
+    <h2>1. Copy All Text</h2>
+    <div class="feature">
+      <div class="shot"><img src="img/en-1.png" alt="Copy All Text screen"></div>
+      <div class="body">
+        <h3>Copies the page text readable in Safari</h3>
+        <p>Tap <strong>Copy All Text</strong> in the popup to copy everything readable on the page to your clipboard in one go.</p>
+        <ul>
+          <li>Shows the <strong>character count</strong> and a <strong>preview</strong> after copying</li>
+          <li>If you have text selected on the page, only that <strong>selection</strong> is copied</li>
+          <li>Pages over 50,000 characters show a confirmation before processing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="copy-article">
+    <h2>2. Copy Article Only</h2>
+    <div class="feature reverse">
+      <div class="shot"><img src="img/en-2.png" alt="Copy Article Only screen"></div>
+      <div class="body">
+        <h3>Strips ads, menus, and footers — keeps the article</h3>
+        <p>Uses Mozilla Readability to extract just the article body. Works well for news articles, blog posts, and documentation pages.</p>
+        <ul>
+          <li>Automatically removes ads, navigation, and footer clutter</li>
+          <li>Falls back to full-page copy if the article body can't be detected</li>
+          <li>The preview indicates when a fallback has occurred</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tap-select">
+    <h2>3. Tap to Select</h2>
+    <div class="feature">
+      <div class="shot"><img src="img/en-3.png" alt="Tap to Select screen"></div>
+      <div class="body">
+        <h3>Tap page regions instead of dragging text handles</h3>
+        <p>A different approach to selection: tap meaningful blocks on the page and copy one or more regions together.</p>
+        <ul>
+          <li>Tap to select, tap again to deselect — multiple regions are copied in order</li>
+          <li>Long-press to switch between parent and child element candidates</li>
+          <li>Tap <strong>Copy</strong> in the floating bar to copy all selected regions</li>
+          <li>All changes to the page are removed when you exit</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="other-formats">
+    <h2>4. More formats</h2>
+    <p class="lead">Open <strong>More formats</strong> in the popup for the following options.</p>
+    <div class="feature">
+      <div class="shot"><img src="img/en-4.png" alt="More formats screen"></div>
+      <div class="body">
+        <h3>Copy as Markdown</h3>
+        <p>Keeps headings, links, lists, tables, and code blocks in Markdown format.</p>
+        <h3>Copy for AI</h3>
+        <p>Combines the article, title, URL, and an instruction into a format ready to paste into an AI chat. Everything is processed on your device — nothing is sent anywhere.</p>
+        <h3>Clean Copy</h3>
+        <p>Removes cookie banners, share buttons, subscription prompts, and repeated menu text using rule-based processing — separate from the Readability-based article extraction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="settings">
+    <h2>Settings</h2>
+    <p class="lead">Tap the settings icon in the popup.</p>
+    <ul>
+      <li><strong>Append URL</strong>: choose whether to add the URL at the end, or the title and URL at the top of the copied text (default: off)</li>
+      <li><strong>Copy for AI URL</strong>: the URL is included by default in Copy for AI (can be turned off before copying)</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>The extension icon doesn't appear</summary>
+        <p>Make sure Copy All: Text is enabled in Settings → Apps → Safari → Extensions. Once enabled, it appears under the Extensions button (the "AA" button) in the address bar.</p></details>
+      <details><summary>"Cannot copy" message appears</summary>
+        <p>The extension cannot run on Safari's internal pages (Start Page, App Store, settings), PDF viewer, or pages that haven't finished loading.</p></details>
+      <details><summary>Copy Article Only returns very little text</summary>
+        <p>Article detection has limits. For pages that aren't articles (e-commerce, portals, etc.), use Copy All Text or Tap to Select instead.</p></details>
+      <details><summary>Content behind a login isn't copied</summary>
+        <p>Content loaded lazily after login, or content inside Shadow DOM, may not be retrieved. Copy what was captured and check the preview for what's missing.</p></details>
+      <details><summary>Why is the app free?</summary>
+        <p>This is a small utility project. It contains no ads, analytics, accounts, or network communication. It will remain free.</p></details>
+      <details><summary>Is my browsing history saved?</summary>
+        <p>No. The extension copies text to your clipboard and does nothing else. Only your settings (URL append preference, etc.) are saved locally on your device.</p></details>
+    </div>
+    <div class="callout" style="margin-top:16px">Note: Depending on the structure of a website or its access restrictions, some text may not be retrievable.</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>For bug reports, requests, or questions, please email us. We respond in both Japanese and English.</p>
+    <p>✉️ <a href="mailto:kouhei1@gmail.com">kouhei1@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div>Copy All: Text / 全文コピー</div>
+  <div style="margin-top:8px">
+    <a href="en.html">Support</a>·
+    <a href="index.html">日本語</a>·
+    <a href="privacy.html">Privacy Policy</a>·
+    <a href="mailto:kouhei1@gmail.com">Contact</a>·
+    <a href="https://isitest1.github.io/portfolio-hub/en">Kohei Ishikawa's Portfolio</a>
+  </div>
+</footer>
+
+</body>
+</html>
