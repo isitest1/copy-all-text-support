@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://copy-all-text.margheritaworks.com/sitemap.xml
